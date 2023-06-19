@@ -35,7 +35,14 @@ function textShuffler(text) {
     return textShuffled.join(' ');
 }
 
-document.getElementById('convert').addEventListener('click', function() {
+let textarea = document.getElementById('input');
+let convert = document.getElementById('convert');
+
+textarea.addEventListener('input', () => {
+    convert.disabled = textarea.value.trim() !== '' ? false : true;
+});
+
+convert.addEventListener('click', () => {
     let input = document.getElementById('input').value;
     let mixed = textShuffler(input);
     let done = document.getElementById('done');
@@ -51,7 +58,7 @@ document.getElementById('convert').addEventListener('click', function() {
     console.log(mixed);
 });
 
-document.getElementById('done').addEventListener('click', function(){
+document.getElementById('done').addEventListener('click', () => {
     window.location.reload();
 })
   
