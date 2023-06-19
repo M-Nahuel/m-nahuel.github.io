@@ -19,3 +19,4 @@ TODO:
 - Fix display settings
 - Add back-end to store users & stats
 - A section to retrieve text already mixed from a database, an input below to test the mixed text was well interpreted
+- Disable convert button while input is empty
