@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+#card {
+    height: 80vh;
+}
+
+#header {
+    height: 10vh;
+}
+
+#output {
+    display: none;
+    height: 90%;
+}
+
+#done {
+    display: none;
+}
