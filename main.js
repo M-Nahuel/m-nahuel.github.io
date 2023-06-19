@@ -35,6 +35,10 @@ function textShuffler(text) {
     return textShuffled.join(' ');
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("modalbtn").click();
+});
+
 let textarea = document.getElementById('input');
 let convert = document.getElementById('convert');
 

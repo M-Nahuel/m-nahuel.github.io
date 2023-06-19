@@ -8,13 +8,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <button id="modalbtn" type="button" class="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content text-bg-dark">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">How this works?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Paste the text you want to shuffle in the input box below, then click the <span id="convert-info">Convert!</span> button to switch the middle letters of the words in the provided text.
+                    </p>
+                    <p>Click the <span id="done-info">Done!</span> button to return to the input section.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Got it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid bg-info-subtle vh-100">
         <div id="header" class="p-3 text-bg-dark">
             <h3 class="text-center">Word Shuffler</h3>
         </div>
         <div id="card" class="card my-3 text-bg-dark mb-3">
             <div class="card-header row-gap-3">
-              <h4 id="description">Place your text here:</h4>
+                <h4 id="description">Place your text here:</h4>
             </div>
             <div class="card-body input-group h-100">
                 <textarea id="input" class="form-control bg-secondary text-white" aria-label="With textarea"></textarea>

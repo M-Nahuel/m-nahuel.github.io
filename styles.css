@@ -18,3 +18,17 @@
 #done {
     display: none;
 }
+
+#modalbtn {
+    display: none;
+}
+
+#convert-info {
+    color: orange;
+    font-weight: bolder;
+}
+
+#done-info {
+    color: green;
+    font-weight: bolder;
+}
