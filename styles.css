@@ -10,7 +10,7 @@
     height: 10vh;
 }
 
-#output {
+#output-div {
     display: none;
     height: 90%;
 }
