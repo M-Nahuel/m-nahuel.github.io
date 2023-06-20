@@ -32,3 +32,7 @@
     color: green;
     font-weight: bolder;
 }
+
+#reveal {
+    display: none;
+}

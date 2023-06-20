@@ -41,6 +41,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let textarea = document.getElementById('input');
 let convert = document.getElementById('convert');
+let reveal = document.getElementById('reveal');
+let done = document.getElementById('done');
+let outp = document.getElementById('output');
 
 textarea.addEventListener('input', () => {
     convert.disabled = textarea.value.trim() !== '' ? false : true;
@@ -49,17 +52,22 @@ textarea.addEventListener('input', () => {
 convert.addEventListener('click', () => {
     let input = document.getElementById('input').value;
     let mixed = textShuffler(input);
-    let done = document.getElementById('done');
 
     document.getElementById('input').style.display = 'none';
     document.getElementById('convert').style.display = 'none';
 
+    reveal.style.display = 'block'
+
     document.getElementById('description').textContent = "Words shuffled!";
-    let outp = document.getElementById('output');
+
     outp.textContent = mixed;
     outp.style.display = 'block';
     done.style.display = 'block';
     console.log(mixed);
+});
+
+reveal.addEventListener('click', () => {
+    
 });
 
 document.getElementById('done').addEventListener('click', () => {
